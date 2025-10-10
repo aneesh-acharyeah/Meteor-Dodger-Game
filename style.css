@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #0a0a1f 0%, #000 80%);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+#scoreboard {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modal {
+  background: #0e152a;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  max-width: 320px;
+  width: 90%;
+}
+
+.modal h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #ff5733;
+}
+
+.modal p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+#restart-button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #00ffff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#restart-button:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
