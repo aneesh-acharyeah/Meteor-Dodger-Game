@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meteor Dodger ☄️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="scoreboard">
+    Score: <span id="score">0</span> | Best: <span id="best">0</span>
+  </div>
+  <canvas id="game"></canvas>
+
+  <!-- Game Over Modal -->
+  <template id="game-over-template">
+    <div class="overlay">
+      <div class="modal">
+        <h2>💥 Game Over!</h2>
+        <p>Score: <strong id="final-score">0</strong></p>
+        <p>Best: <strong id="final-best">0</strong></p>
+        <button id="restart-button">🔁 Play Again</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
