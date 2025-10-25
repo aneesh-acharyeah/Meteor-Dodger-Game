@@ -1,4 +1,4 @@
-# Meteor Dodger ☄️
+# Meteor Dodger ☄️ 
 
 **Meteor Dodger** is a fast-paced survival game where you pilot a spaceship and dodge falling meteors. The longer you survive, the higher your score. Collect stars to earn bonus points and beat your high score!
 
